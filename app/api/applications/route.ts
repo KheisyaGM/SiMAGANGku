@@ -1,46 +1,50 @@
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 
+// GET ALL APPLICATIONS
 export async function GET() {
   try {
-    const companies = await prisma.company.findMany();
-
-    return NextResponse.json({
-      success: true,
-      data: companies,
-    });
-  } catch (error) {
-    return NextResponse.json({
-      success: false,
-      message: "Failed get companies",
-      error,
-    });
-  }
-}
-
-// CREATE
-export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-
-    const company = await prisma.company.create({
-      data: {
-        name: body.name,
-        address: body.address,
-        field: body.field,
-        quota: Number(body.quota),
+    const applications = await prisma.application.findMany({
+      include: {
+        company: true,
       },
     });
 
     return NextResponse.json({
       success: true,
-      message: "Company created successfully",
-      data: company,
+      data: applications,
     });
   } catch (error) {
     return NextResponse.json({
       success: false,
-      message: "Failed create company",
+      message: "Failed get applications",
+      error,
+    });
+  }
+}
+
+// CREATE APPLICATION
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+
+    const application = await prisma.application.create({
+      data: {
+        studentName: body.studentName,
+        className: body.className,
+        companyId: Number(body.companyId),
+        status: body.status,
+      },
+    });
+
+    return NextResponse.json({
+      success: true,
+      data: application,
+    });
+  } catch (error) {
+    return NextResponse.json({
+      success: false,
+      message: "Failed create application",
       error,
     });
   }
