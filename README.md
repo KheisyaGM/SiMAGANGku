@@ -1,3 +1,114 @@
+# 🚀 SiMAGANGku  
+### *Solusi Digital Pengelolaan PKL dan Prakerin Siswa*
+
+---
+
+## 📌 Tentang Project
+
+**SiMAGANGku** adalah sistem informasi berbasis web yang dirancang untuk membantu siswa SMK dalam mencari dan mengelola tempat PKL/Prakerin secara lebih mudah, cepat, dan terstruktur.
+
+Website ini memudahkan admin dalam mengelola data perusahaan PKL serta pengajuan siswa secara digital, sehingga proses administrasi PKL menjadi lebih efektif dan efisien ✨
+
+---
+
+## 🎯 Tujuan Website
+
+- 💼 Mempermudah pengelolaan data tempat PKL  
+- 📍 Menyediakan informasi perusahaan PKL di Malang  
+- 📝 Mengelola pengajuan siswa secara digital  
+- ⚡ Mempercepat dan merapikan proses PKL/prakerin  
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- ⚛️ Next.js  
+- 🟦 TypeScript  
+- 🗄️ MySQL  
+- 🔥 Prisma ORM  
+- 🎨 Tailwind CSS  
+- 📮 Postman  
+- 🧩 XAMPP  
+
+---
+
+## ✨ Fitur Utama
+
+### 🏢 Manajemen Data Perusahaan (CRUD)
+
+Admin dapat:
+- ➕ Menambahkan data perusahaan  
+- 👀 Melihat daftar perusahaan  
+- ✏️ Mengedit data perusahaan  
+- 🗑️ Menghapus data perusahaan  
+
+**Data perusahaan meliputi:**
+- Nama perusahaan  
+- Alamat  
+- Bidang usaha  
+- Kuota PKL  
+
+---
+
+### 👨‍🎓 Manajemen Pengajuan Siswa (CRUD)
+
+Admin dapat:
+- ➕ Menambahkan pengajuan PKL siswa  
+- 👀 Melihat daftar pengajuan  
+- ✏️ Mengubah status pengajuan  
+- 🗑️ Menghapus pengajuan  
+
+**Data pengajuan meliputi:**
+- Nama siswa  
+- Kelas  
+- Perusahaan tujuan  
+- Status pengajuan  
+
+---
+
+## 🔗 Relasi Database
+
+Sistem ini menggunakan relasi **one-to-many**, yaitu:
+
+- Satu perusahaan dapat memiliki banyak pengajuan siswa 📚  
+
+**Contoh:**
+- PT ABC  
+  - Grace  
+  - Andi  
+  - Budi  
+
+---
+
+## 📸 Tampilan Sistem
+
+SiMAGANGku dibuat dengan konsep **sederhana, modern, dan user-friendly**, sehingga mudah digunakan oleh admin maupun siswa 🖥️✨
+
+---
+
+## 👩‍💻 Developer
+
+Dibuat sebagai proyek **UKL (Ujian Kenaikan Level)** SMK 💙  
+
+---
+
+## 🌟 Future Improvements
+
+- 🔍 Fitur pencarian perusahaan  
+- 🗺️ Integrasi Google Maps lokasi perusahaan  
+- 🔐 Sistem login multi-user  
+- 📊 Dashboard statistik  
+- 📁 Upload dokumen pengajuan  
+
+---
+
+> 💡 *“SiMAGANGku hadir untuk membuat proses PKL lebih terstruktur, cepat, dan digital.”*
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
